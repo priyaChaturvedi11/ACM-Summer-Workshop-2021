@@ -11,7 +11,7 @@
     <title>ACM Workshop</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./img/core-img/acmlogo.png">
+    <link rel="icon" href="./img/core-img/new-acm-logo.jpeg">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -33,7 +33,7 @@
                 <nav class="classy-navbar justify-content-between" id="conferNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="./index.html"><img src="./img/core-img/acmlogo.png" height="80px" width="60px" alt=""></a>
+                    <a class="nav-brand" href="./index.html"><img src="./img/core-img/new-acm-logo.jpeg" height="80px" width="60px" alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -124,6 +124,12 @@
                                 </a>
                                 <br>
                                 <br>
+                                <button class="btn confer-btn w-75 mb-30" type="button" onClick="document.getElementById('payment-details').scrollIntoView();">
+                                    
+                                        Slide Down 
+                                    <i class="zmdi zmdi-long-arrow-down "></i>
+                                
+                            </button>
                                 <!-- <a class="btn confer-btn w-100 mb-30 ">Pay Here (Coming Soon)<i class="zmdi zmdi-long-arrow-right "></i></a> -->
 
                             </div>
@@ -156,14 +162,14 @@
                                     attach a screenshot of their payment slip.</a>
                                 <br>
                                 <br>
-                                <div class="btn confer-btn w-75 mb-30">
-                                    <a href="https://forms.gle/z7YvHyWQdjRUCTNFA " 
-                                    style="color: #ffffff;"
-                                    >
+                                <button class="btn confer-btn w-75 mb-30" id="register-button">
+                                    <!-- <a href="https://forms.gle/z7YvHyWQdjRUCTNFA " 
+                                    
+                                    > -->
                                         Register Here 
                                     <i class="zmdi zmdi-long-arrow-right "></i>
-                                </a>
-                                </div>
+                                <!-- </a> -->
+                                    </button>
                             </div>
                         </div>
 
@@ -240,7 +246,7 @@
                 </div>
             </div>
 
-            <div class="row ">
+            <div class="row " id="payment-details">
                 <!-- Heading -->
                 <div class="col-12 ">
                     <div class="section-heading text-center wow fadeInUp " data-wow-delay="300ms ">
@@ -291,7 +297,7 @@
                 <br>
                 <br>
                 <a href="https://forms.gle/z7YvHyWQdjRUCTNFA " class="btn confer-btn confer-btn-register mb-50 mx-auto"
-                    style="color: #ffffff;"
+                style="color: #ffffff;"
                 >
                 Register Here 
                 <i class="zmdi zmdi-long-arrow-right "></i>
@@ -311,7 +317,7 @@
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="single-footer-widget mb-60 wow fadeInUp " data-wow-delay="300ms ">
                             <!-- Footer Logo -->
-                            <a href="index.html" class="footer-logo "><img src="img/core-img/acmlogo.png " height="60px " width="50px " alt=" "></a>
+                            <a href="index.html" class="footer-logo "><img src="img/core-img/new-acm-logo.jpeg " height="60px " width="50px " alt=" "></a>
                             <p>As the world’s largest computing society, ACM strengthens the profession's collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. </p>
 
                             <!-- Social Info -->
@@ -409,6 +415,12 @@
     <script src="js/confer.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+
+    <script type="text/javascript">
+        document.getElementById("register-button").onclick = function () {
+            location.href = "https://forms.gle/z7YvHyWQdjRUCTNFA";
+        };
+    </script>
 
 </body>
 

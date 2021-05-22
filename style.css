@@ -2324,11 +2324,13 @@ input:required {
 
 .single-blog-area .single-blog-text .post-meta a:last-child {
     margin-right: 0;
+    color: #fff;
 }
 
 .single-blog-area .single-blog-text .post-meta a:hover,
 .single-blog-area .single-blog-text .post-meta a:focus {
     color: #df42b1;
+    
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
