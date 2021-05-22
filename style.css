@@ -493,7 +493,7 @@ input:required {
 }
 
 .section-heading p {
-    color: #df42b1;
+    color: #505add;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -520,6 +520,28 @@ input:required {
         font-size: 30px;
     }
 }
+
+/********** Speakers Page Start ******************/
+.section-heading-speakers {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.section-heading-speakers p {
+    color: #505add;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+
+
+/********** Speakers Page End *******************/
+
 
 .section-heading-2 {
     position: relative;
@@ -659,7 +681,8 @@ input:required {
     margin-left: 5px;
 }
 
-.confer-btn::before {
+.confer-btn::before,
+.confer-btn-register::before {
     -webkit-transition-duration: 800ms;
     -o-transition-duration: 800ms;
     transition-duration: 800ms;
@@ -672,6 +695,12 @@ input:required {
     background: #df42b1;
     background-image: -webkit-linear-gradient(120deg, #505add 0%, #df42b1 100%);
     background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+    z-index: -2;
+}
+.confer-btn-register::before {
+    background: #df42b1;
+    background-image: -webkit-linear-gradient(30deg, #505add 0%, #111343 100%);
+    background-image: -ms-linear-gradient(30deg, #505add 0%, #111343 100%);
     z-index: -2;
 }
 
@@ -1162,6 +1191,8 @@ input:required {
     }
 }
 
+/* welcome-text start */
+
 .single-welcome-slide .welcome-text {
     position: relative;
     z-index: 1;
@@ -1171,7 +1202,7 @@ input:required {
     position: relative;
     z-index: 1;
     font-weight: 700;
-    font-size: 90px;
+    font-size: 40px;
     text-transform: uppercase;
     display: block;
     margin-bottom: 10px;
@@ -1180,13 +1211,13 @@ input:required {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-welcome-slide .welcome-text h2 {
-        font-size: 60px;
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .single-welcome-slide .welcome-text h2 {
-        font-size: 30px;
+        font-size: 10px;
     }
 }
 
@@ -1261,6 +1292,56 @@ input:required {
 .single-welcome-slide .welcome-text .hero-mail-contact:focus {
     color: #df42b1;
 }
+
+/* welcome-text end */
+
+/******************** workshop-title start ***********/
+
+
+.single-welcome-slide .workshop-title,
+.section-heading-speakers {
+    position: relative;
+    z-index: 1;
+}
+
+.single-welcome-slide .workshop-title h2,
+.section-heading-speakers p {
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    /* color: #eee1e1; */
+    background-image: -webkit-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+    text-shadow: #ffffff;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-welcome-slide .workshop-title h2,
+    .section-heading-speakers p  {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .single-welcome-slide .workshop-title h2,
+    .section-heading-speakers p  {
+        font-size: 20px;
+    }
+}
+
+
+
+
+/******************** workshop-title end *************/
+
 
 .single-welcome-slide .welcome-text-two {
     position: relative;
@@ -1603,6 +1684,7 @@ input:required {
     font-size: 14px;
     font-weight: 500;
     color: #df42b1;
+    line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: 2px solid #4b4d7b;
