@@ -1162,6 +1162,8 @@ input:required {
     }
 }
 
+/* welcome-text start */
+
 .single-welcome-slide .welcome-text {
     position: relative;
     z-index: 1;
@@ -1171,7 +1173,7 @@ input:required {
     position: relative;
     z-index: 1;
     font-weight: 700;
-    font-size: 90px;
+    font-size: 40px;
     text-transform: uppercase;
     display: block;
     margin-bottom: 10px;
@@ -1180,13 +1182,13 @@ input:required {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-welcome-slide .welcome-text h2 {
-        font-size: 60px;
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .single-welcome-slide .welcome-text h2 {
-        font-size: 30px;
+        font-size: 10px;
     }
 }
 
@@ -1261,6 +1263,52 @@ input:required {
 .single-welcome-slide .welcome-text .hero-mail-contact:focus {
     color: #df42b1;
 }
+
+/* welcome-text end */
+
+/******************** workshop-title start ***********/
+
+
+.single-welcome-slide .workshop-title {
+    position: relative;
+    z-index: 1;
+}
+
+.single-welcome-slide .workshop-title h2 {
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    /* color: #eee1e1; */
+    background-image: -webkit-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+    text-shadow: #ffffff;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-welcome-slide .workshop-title h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .single-welcome-slide .workshop-title h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+/******************** workshop-title end *************/
+
 
 .single-welcome-slide .welcome-text-two {
     position: relative;
