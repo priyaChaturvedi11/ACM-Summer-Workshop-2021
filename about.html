@@ -21,6 +21,11 @@
 
     .moretext {
     display: none;
+    /* transition: max-height .5s ease; */
+    -moz-transition: max-height 0.4s ease-in-out;
+    -webkit-transition: max-height 0.4s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
+    max-height: 100%;
     }
 
 </style>
@@ -35,7 +40,7 @@
     <!-- Header Area Start -->
     <header class="header-area">
         <div class="classy-nav-container breakpoint-off">
-            <div class="container">
+<div class="container">
                 <!-- Classy Menu -->
                 <nav class="classy-navbar justify-content-between" id="conferNav">
 
@@ -707,21 +712,26 @@
 
         //     // var txt = $(".moretext").is(':visible') ? 'Read More' : 'Read Less';
         //     // $(".this").text(txt);
-        //     $('.moretext').slideToggle();
+        //    
           
         //  });
 
 
          $(document).ready(function () {
                 $(".moreless-button").click(function () {
-                    $(this).prev().slideToggle();
-                    
-                    
-                    if ($(this).prev().is(":visible")) {
-                        $(this).text("Read Less");
-                    } else {
-                        $(this).text("Read More");
+                    if($(this).text() == 'Read More'){
+                        $(this).prev().removeClass('moretext')
+                        $(this).text("Read Less")
+                        // $(this).prev().slideToggle();
+                        
+                    }else{
+                        $(this).prev().addClass('moretext')
+                        $(this).text("Read More")
+                        // $(this).prev().slideToggle();
+                        
                     }
+
+       
                 });
             });
 
